@@ -31,6 +31,11 @@ It is a basic web application developed with **Flask** that enables users to cre
 - pip install -r requirements.txt.
 - pip install flask.
 
+## Live Demo
+
+Check out the live deployed project here: [View Project on Render](https://celebal-assignment-1-1.onrender.com)
+
+
 
 
 
