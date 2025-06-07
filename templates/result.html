@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} Pattern</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            font-family: 'Courier New', monospace;
+            padding-top: 60px;
+            min-height: 100vh;
+        }
+
+        .pattern-box {
+            background-color: #1e1e2f;
+            color: #00ff88;
+            padding: 30px;
+            border-radius: 16px;
+            white-space: pre;
+            font-size: 18px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .btn-custom {
+            margin-top: 30px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 700px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h2 class="title mb-4">{{ title }} Pattern</h2>
+
+    <div class="pattern-box text-start mx-auto">
+        {% for row in output %}
+{{ row }}
+        {% endfor %}
+    </div>
+
+    <a href="/" class="btn btn-outline-light btn-custom">← Try Another Pattern</a>
+</div>
+
+</body>
+</html>
